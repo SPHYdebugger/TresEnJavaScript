@@ -24,9 +24,9 @@ const haGanado = () =>{
         return true;
     }else if(tablero[2] == tablero[5] && tablero[2] == tablero[8] && tablero[2]){
         return true;
-    }if(tablero[0] == tablero[4] && tablero[0] == tablero[8] && tablero[0]){
+    }else if(tablero[0] == tablero[4] && tablero[0] == tablero[8] && tablero[0]){
         return true;
-    }if(tablero[2] == tablero[4] && tablero[2] == tablero[6] && tablero[2]){
+    }else if(tablero[2] == tablero[4] && tablero[2] == tablero[6] && tablero[2]){
         return true;
     }else{
         return false;
