@@ -1,14 +1,22 @@
 let turno = 0;
 const tablero = [];
+const imagenes = ['sources/X.png', 'sources/O.png'];
+let combinación = 0;
 
-const btnPulsado = (e, pos) =>{
-    turno ++;
+const btnPulsado = (e, pos) => {
+    turno++;
     const btn = e.target;
-    const color = turno % 2 ? 'salmon':'palegreen'
-    btn.style.backgroundColor = color;
-    tablero[pos] = color;
-    //alert(tablero[pos])
-    if(haGanado())alert('enhorabuena jugador ' + color)
+    const imgIndex = turno % 2;
+    const imagen = imagenes[imgIndex];
+    
+    btn.style.backgroundImage = `url(${imagen})`;
+    btn.style.backgroundSize = 'cover';
+    
+    tablero[pos] = imagen;
+    
+    if (haGanado()) {
+        alert('¡Enhorabuena jugador ' + imagen + '!');
+    }
 }
 
 const haGanado = () =>{
