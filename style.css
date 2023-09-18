@@ -10,3 +10,9 @@ button{
     height: 200px;
 
 }
+
+.ganador{
+    border-color:crimson;
+    border-width: 5px;
+    border-radius: 10px;
+}
