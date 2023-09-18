@@ -15,7 +15,10 @@ const btnPulsado = (e, pos) => {
     tablero[pos] = imagen;
     
     if (haGanado()) {
-        alert('¡Enhorabuena jugador ' + imagen + '!' + 'combinación' + combinación);
+        setTimeout(() => {
+            alert('¡Enhorabuena jugador ' + imagen + '!' + 'combinación' + combinación);
+        }, 100);
+        
         if (combinación == 1){
             document.querySelectorAll('button')[0].classList.add('ganador');
             document.querySelectorAll('button')[1].classList.add('ganador');
