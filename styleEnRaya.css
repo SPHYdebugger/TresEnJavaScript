@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    border-radius: 10px;
+}
+
+.marco-rosa {
+    border: 10px solid #ff99cc; /* Color rosa del marco */
+    padding: 20px;
+    
+}
+
+header {
+    background-color: #ff99cc; /* Fondo blanco para el encabezado */
+    height: 100px;
+    padding: 10px 0;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fdfcfc;
+    font-weight: bold;
+}
+
+
+nav ul li a:hover {
+    color: #050000;
+}
+
+
+
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 600px;
+    margin: auto;
+    margin-top: 25px;
+    text-align: center;
+}
+
+button{
+    width: 200px;
+    height: 200px;
+
+}
+
+.ganador{
+    border-color:crimson;
+    border-width: 5px;
+    border-radius: 10px;
+}
+.header{
+    height: 20px;
+    display: block;
+}
+
+#logo{
+    width: 150px;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+}
+
+.avatar{
+    width: 70px;
+    height: 70px;
+}
+.avatar:hover{
+    opacity: 50%;
+    border-width: 15px;
+    border-color: #050000;
+}
+.avatares{
+    height: 180px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.bReinicio{
+    text-align: center;
+}
+
+.reinicio{
+    display: inline-block;
+    background-color: #ff99cc;
+    justify-content: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+
+}
+
+.seleccionado{
+    width: 100px;
+    height: 100px;
+}
+
+.alerta {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:#c204fcde; /* Color de fondo de la alerta */
+    color: black; /* Color del texto de la alerta */
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    display: none;
+  }
+  
+  
+  

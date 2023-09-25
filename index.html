@@ -4,10 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleEnRaya.css">
 </head>
 <body>
-    <div><h1>JUEGO DE 3 EN RAYA HECHO EN JAVASCRIPT</h1></div>
+    
+    <div class="marco-rosa">
+        <header>
+            <img id="logo" src="sources\caraSofi.png" alt="Logo de la página">
+            <nav>
+                <ul>
+                    <li><h2>JUEGOS PARA SOFÍA: </h2></li>
+                    <li><a href="index.html"><h1>3enRaya</h1></a></li>
+                    <li><a href="ahorcado.html"><h1>Ahorcado</h1></a></li>
+                    <li><a href="#"><h1>Memoria</h1></a></li>
+                </ul>
+            </nav>
+        </header>
+        <div style="background-color: #ff99cc; border-radius: 15px;"><h1>JUEGO DE 3 EN RAYA HECHO EN JAVASCRIPT</h1>
+        <div class="avatares">
+            <div>
+                <h2>Selecciona un avatar JUGADOR1:</h2>
+                <img class="avatar" src="caraSofi.png" id="imagen11" alt="Imagen 1">
+                <img class="avatar" src="caraMami.png" id="imagen21" alt="Imagen 2">
+                <img class="avatar" src="caraPapi.png" id="imagen31" alt="Imagen 3">
+            </div>
+            <div>
+                <h2>Selecciona un avatar JUGADOR2:</h2>
+                <img class="avatar" src="caraSofi.png" id="imagen12" alt="Imagen 1">
+                <img class="avatar" src="caraMami.png" id="imagen22" alt="Imagen 2">
+                <img class="avatar" src="caraPapi.png" id="imagen32" alt="Imagen 3">
+            </div>
+            
+        
+
+        </div>
+    </div>
     <div class="container">
         
             <button></button>
@@ -20,8 +51,15 @@
             <button></button>
             <button></button>
     </div>
-    
-    <script src="./javascript.js"></script>
-</body>
+    <div id="alerta" class="alerta oculto">
+        Este es un mensaje de alerta.
+      </div>
+      
+    <div class="bReinicio">
+        <a href="index.html"><h2 class="reinicio">VOLVER A JUGAR</h2></a>
+    </div>
+    </div>
 
+    <script src="./jsEnRaya.js"></script>
+</body>
 </html>

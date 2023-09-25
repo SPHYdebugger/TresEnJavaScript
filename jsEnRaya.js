@@ -1,21 +1,34 @@
-let turno = 0;
-const tablero = [];
-const imagenes = ['sources/caraPapi.jpg', 'sources/caraSofi.jpg'];
-let combinación = 0;
+let turno = 1;
+const tablero = new Array(9).fill(null);
+let jugador1 = '';
+let jugador2 = '';
+let nombreJugador1 = '';
+let nombreJugador2 = '';
 
 const btnPulsado = (e, pos) => {
+
+    if (tablero[pos] !== null) {
+        mostrarAlerta('Esta casilla ya está usada, por favor elige otra.');
+        return; // Salir de la función si la casilla ya está ocupada
+    }
+
     turno++;
     const btn = e.target;
     const imgIndex = turno % 2;
-    const imagen = imagenes[imgIndex];
-    
+    const imagen = imgIndex === 0 ? jugador1 : jugador2;
+
     btn.style.backgroundImage = `url(${imagen})`;
     btn.style.backgroundSize = 'cover';
-    
+
     tablero[pos] = imagen;
     
     if (haGanado()) {
-        alert('¡Enhorabuena jugador ' + imagen + '!' + 'combinación' + combinación);
+        setTimeout(() => {
+            const nombreGanador = turno % 2 === 0 ? nombreJugador1 : nombreJugador2;
+            mostrarAlerta('¡Enhorabuena jugador ' + nombreGanador + '!');
+            
+        }, 100);
+        
         if (combinación == 1){
             document.querySelectorAll('button')[0].classList.add('ganador');
             document.querySelectorAll('button')[1].classList.add('ganador');
@@ -76,3 +89,70 @@ const haGanado = () =>{
 
 document.querySelectorAll('button').forEach(
     (obj, i) => obj.addEventListener('click', (e) => btnPulsado(e,i)));
+
+    function seleccionarImagen1(rutaImagen) {
+        jugador1 = rutaImagen;
+        console.log('Imagen seleccionada para jugador 1:', jugador1);
+    }
+    
+    function seleccionarImagen2(rutaImagen) {
+        jugador2 = rutaImagen;
+        console.log('Imagen seleccionada para jugador 2:', jugador2);
+    }
+    
+    // Agregar eventos de clic a las imágenes
+    document.getElementById('imagen11').addEventListener('click', function () {
+        seleccionarImagen1('caraSofi.png');
+        nombreJugador1 = 'SOFIA';
+        document.getElementById('imagen11').classList.add('seleccionado');
+    });
+    
+    document.getElementById('imagen21').addEventListener('click', function () {
+        seleccionarImagen1('caraMami.png');
+        nombreJugador1 = 'MARIA';
+        document.getElementById('imagen21').classList.add('seleccionado');
+    });
+    
+    document.getElementById('imagen31').addEventListener('click', function () {
+        seleccionarImagen1('caraPapi.png');
+        nombreJugador1 = 'SANTI';
+        document.getElementById('imagen31').classList.add('seleccionado');
+    });
+    
+    document.getElementById('imagen12').addEventListener('click', function () {
+        seleccionarImagen2('caraSofi.png');
+        nombreJugador2 = 'SOFIA';
+        document.getElementById('imagen12').classList.add('seleccionado');
+    });
+    
+    document.getElementById('imagen22').addEventListener('click', function () {
+        seleccionarImagen2('caraMami.png');
+        nombreJugador2 = 'MARIA';
+        document.getElementById('imagen22').classList.add('seleccionado');
+    });
+    
+    document.getElementById('imagen32').addEventListener('click', function () {
+        seleccionarImagen2('caraPapi.png');
+        nombreJugador2 = 'SANTI';
+        document.getElementById('imagen32').classList.add('seleccionado');
+    });
+
+    function mostrarAlerta(mensaje) {
+        const alerta = document.getElementById('alerta');
+        alerta.innerText = mensaje;
+      
+        // Mostrar la alerta
+        alerta.style.display = 'block';
+                  
+        // Ocultar la alerta después de 3 segundos
+        setTimeout(() => {
+         
+          setTimeout(() => {
+            alerta.style.display = 'none';
+          }, 300);
+        }, 3000);
+      }
+      
+     
+      
+      
