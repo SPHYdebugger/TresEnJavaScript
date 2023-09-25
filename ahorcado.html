@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styleAhorcado.css">
+</head>
+<body>
+    
+    <div class="marco-rosa">
+        <header>
+            <img id="logo" src="sources\caraSofi.png" alt="Logo de la página">
+            <nav>
+                <ul>
+                    <li><h2>JUEGOS PARA SOFÍA: </h2></li>
+                    <li><a href="index.html"><h1>3enRaya</h1></a></li>
+                    <li><a href="ahorcado.html"><h1>Ahorcado</h1></a></li>
+                    <li><a href="#"><h1>Memoria</h1></a></li>
+                </ul>
+            </nav>
+        </header>
+        <div style="background-color: #ff99cc; border-radius: 15px;"><h1>JUEGO DEL AHORCADO HECHO EN JAVASCRIPT</h1>
+        <div id="palabra">
+
+            
+
+        </div>
+        <div id="informacion">
+            <div id="intentos">Intentos restantes: <span id="intentosRestantes"></span></div>
+            <div id="letrasUsadas">Letras usadas: <span id="letras"></span></div>
+        </div>
+        <input type="text" id="adivinaLetra" maxlength="1" placeholder="Adivina una letra">
+        <button id="adivinaBtn">Adivinar</button>
+        
+    </div>
+    <div class="bReinicio">
+        <a href="ahorcado.html"><h2 class="reinicio">VOLVER A JUGAR</h2></a>
+    </div>
+    <div id="alerta" class="alerta oculto">
+        Este es un mensaje de alerta.
+      </div>
+    <script src="./jsAhorcado.js"></script>
+</body>
+</html>
