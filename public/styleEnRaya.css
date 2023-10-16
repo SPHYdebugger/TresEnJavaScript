@@ -106,7 +106,7 @@ button{
     border-color: #050000;
 }
 .avatares{
-    height: 180px;
+    height: auto;
     display: flex;
     justify-content: space-around;
 }
@@ -128,8 +128,7 @@ button{
 }
 
 .seleccionado{
-    width: 100px;
-    height: 100px;
+    width: 10vw;
 }
 .noSeleccionado{
     opacity: 30%;
