@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="memoria.css">
+</head>
+<body>
+    
+    <div class="marco-rosa">
+        <header>
+            <img id="logo" src="caraSofi.png" alt="Logo de la página">
+            <nav>
+                <h2>JUEGOS PARA SOFÍA: </h2>
+                <ul>
+                    
+                    <li><a href="index.html"><h1>3enRaya</h1></a></li>
+                    <li><a href="ahorcado.html"><h1>Ahorcado</h1></a></li>
+                    <li><a href="memoria.html"><h1>Memoria</h1></a></li>
+                    
+                </ul>
+            </nav>
+        </header>
+        <div style="background-color: #cf9924; border-radius: 15px;"><h1>JUEGO DE MEMORIA HECHO EN JAVASCRIPT</h1>
+        <p>Descubre una pareja de cartas</p>
+        <div id="intentos">Intentos restantes: <span id="intentosRestantes"></span></div>
+        
+    </div>
+    <div class="game-board" id="game-board">
+        <!-- Los botones se generarán dinámicamente con JavaScript -->
+    </div>
+    <div id="alerta" class="alerta oculto">
+        Este es un mensaje de alerta.
+      </div>
+      
+    <div class="bReinicio">
+        <a href="memoria.html"><h2 class="reinicio">VOLVER A JUGAR</h2></a>
+    </div>
+    </div>
+
+    <script src="./memoria.js"></script>
+</body>
+</html>

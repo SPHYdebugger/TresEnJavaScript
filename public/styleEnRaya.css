@@ -6,14 +6,14 @@ body {
 }
 
 .marco-rosa {
-    border: 10px solid #ff99cc; /* Color rosa del marco */
+    border: 10px solid #cf9924; /* Color rosa del marco */
     padding: 20px;
     
 }
 
 header {
-    background-color: #ff99cc; /* Fondo blanco para el encabezado */
-    height: 100px;
+    background-color: #cf9924; /* Fondo blanco para el encabezado */
+    
     padding: 10px 0;
     display: flex;
     justify-content: left;
@@ -21,12 +21,16 @@ header {
     padding: 15px;
     border-radius: 10px;
 }
+nav{
+    width: 100%;
 
+}
 nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
+    justify-content: center;
 }
 
 nav ul li {
@@ -41,6 +45,7 @@ nav ul li a {
     text-decoration: none;
     color: #fdfcfc;
     font-weight: bold;
+    font-size: 2vw;
 }
 
 
@@ -48,21 +53,31 @@ nav ul li a:hover {
     color: #050000;
 }
 
+h1{
+    font-size: 4vw;
+    text-align: center;
+}
 
+h2{
+    font-size: 2.5vw;
+}
 
+p{
+    text-align: center;
+}
 
 .container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    width: 600px;
+    width: fit-content;
     margin: auto;
     margin-top: 25px;
     text-align: center;
 }
 
 button{
-    width: 200px;
-    height: 200px;
+    width: 20vw;
+    height: 20vw;
 
 }
 
@@ -77,15 +92,13 @@ button{
 }
 
 #logo{
-    width: 150px;
-    margin-left: 20px;
-    margin-right: 20px;
+    width: 20vw;
+    margin: 10px;
     
 }
 
 .avatar{
-    width: 70px;
-    height: 70px;
+    width: 8vw;
 }
 .avatar:hover{
     opacity: 50%;
@@ -104,7 +117,7 @@ button{
 
 .reinicio{
     display: inline-block;
-    background-color: #ff99cc;
+    background-color: #cf9924;
     justify-content: center;
     padding: 10px 20px;
     border-radius: 5px;
@@ -118,19 +131,35 @@ button{
     width: 100px;
     height: 100px;
 }
+.noSeleccionado{
+    opacity: 30%;
+}
 
 .alerta {
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color:#c204fcde; /* Color de fondo de la alerta */
-    color: black; /* Color del texto de la alerta */
+    background-color:#cf9924;
+    color: black; 
     padding: 15px;
     border-radius: 5px;
     text-align: center;
     display: none;
+    border-color: #050000;
+    border-style: double;
   }
   
   
-  
+  @media screen and (max-width: 500px) {
+  nav ul{
+    display: block;
+  }
+  .seleccionado{
+    width: 50px;
+    height: 50px;
+    }
+    nav ul li {
+    margin-right: 0px;
+    }
+ }

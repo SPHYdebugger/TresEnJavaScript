@@ -1,0 +1,176 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    border-radius: 10px;
+}
+
+.marco-rosa {
+    border: 10px solid #cf9924; /* Color rosa del marco */
+    padding: 20px;
+    
+}
+
+header {
+    background-color: #cf9924; /* Fondo blanco para el encabezado */
+    
+    padding: 10px 0;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px;
+}
+nav{
+    width: 100%;
+
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fdfcfc;
+    font-weight: bold;
+    font-size: 2vw;
+}
+
+
+nav ul li a:hover {
+    color: #050000;
+}
+
+h1{
+    font-size: 4vw;
+    text-align: center;
+}
+
+h2{
+    font-size: 2.5vw;
+}
+
+p{
+    text-align: center;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: fit-content;
+    margin: auto;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.game-board {
+    width: 100%;
+    text-align: -webkit-center;
+    grid-template-columns: repeat(4, 100px);
+    gap: 10px;
+    margin-top: 50px;
+}
+
+.game-button {
+    width: 20vw;
+    height: 20vw;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    background-size: cover;
+}
+
+
+.ganador{
+    border-color:crimson;
+    border-width: 5px;
+    border-radius: 10px;
+}
+.header{
+    height: 20px;
+    display: block;
+}
+
+#logo{
+    width: 20vw;
+    margin: 10px;
+    
+}
+
+.avatar{
+    width: 8vw;
+}
+.avatar:hover{
+    opacity: 50%;
+    border-width: 15px;
+    border-color: #050000;
+}
+.avatares{
+    height: 180px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.bReinicio{
+    text-align: center;
+}
+
+.reinicio{
+    display: inline-block;
+    background-color: #cf9924;
+    justify-content: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+
+}
+
+.seleccionado{
+    width: 100px;
+    height: 100px;
+}
+.noSeleccionado{
+    opacity: 30%;
+}
+
+.alerta {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:#cf9924;
+    color: black; 
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    display: none;
+    border-color: #050000;
+    border-style: double;
+  }
+  
+  
+  @media screen and (max-width: 500px) {
+  nav ul{
+    display: block;
+  }
+  .seleccionado{
+    width: 50px;
+    height: 50px;
+    }
+    nav ul li {
+    margin-right: 0px;
+    }
+ }

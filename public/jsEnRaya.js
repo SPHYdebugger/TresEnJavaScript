@@ -105,36 +105,48 @@ document.querySelectorAll('button').forEach(
         seleccionarImagen1('caraSofi.png');
         nombreJugador1 = 'SOFIA';
         document.getElementById('imagen11').classList.add('seleccionado');
+        document.getElementById('imagen21').classList.add('noSeleccionado');
+        document.getElementById('imagen31').classList.add('noSeleccionado');
     });
     
     document.getElementById('imagen21').addEventListener('click', function () {
         seleccionarImagen1('caraMami.png');
         nombreJugador1 = 'MARIA';
         document.getElementById('imagen21').classList.add('seleccionado');
+        document.getElementById('imagen11').classList.add('noSeleccionado');
+        document.getElementById('imagen31').classList.add('noSeleccionado');
     });
     
     document.getElementById('imagen31').addEventListener('click', function () {
         seleccionarImagen1('caraPapi.png');
         nombreJugador1 = 'SANTI';
         document.getElementById('imagen31').classList.add('seleccionado');
+        document.getElementById('imagen11').classList.add('noSeleccionado');
+        document.getElementById('imagen21').classList.add('noSeleccionado');
     });
     
     document.getElementById('imagen12').addEventListener('click', function () {
         seleccionarImagen2('caraSofi.png');
         nombreJugador2 = 'SOFIA';
         document.getElementById('imagen12').classList.add('seleccionado');
+        document.getElementById('imagen22').classList.add('noSeleccionado');
+        document.getElementById('imagen32').classList.add('noSeleccionado');
     });
     
     document.getElementById('imagen22').addEventListener('click', function () {
         seleccionarImagen2('caraMami.png');
         nombreJugador2 = 'MARIA';
         document.getElementById('imagen22').classList.add('seleccionado');
+        document.getElementById('imagen12').classList.add('noSeleccionado');
+        document.getElementById('imagen32').classList.add('noSeleccionado');
     });
     
     document.getElementById('imagen32').addEventListener('click', function () {
         seleccionarImagen2('caraPapi.png');
         nombreJugador2 = 'SANTI';
         document.getElementById('imagen32').classList.add('seleccionado');
+        document.getElementById('imagen12').classList.add('noSeleccionado');
+        document.getElementById('imagen22').classList.add('noSeleccionado');
     });
 
     function mostrarAlerta(mensaje) {

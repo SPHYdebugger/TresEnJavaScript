@@ -6,14 +6,14 @@ body {
 }
 
 .marco-rosa {
-    border: 10px solid #ff99cc; /* Color rosa del marco */
+    border: 10px solid #cf9924; /* Color rosa del marco */
     padding: 20px;
     
 }
 
 header {
-    background-color: #ff99cc; /* Fondo blanco para el encabezado */
-    height: 100px;
+    background-color: #cf9924; /* Fondo blanco para el encabezado */
+    
     padding: 10px 0;
     display: flex;
     justify-content: left;
@@ -21,11 +21,16 @@ header {
     padding: 15px;
     border-radius: 10px;
 }
+nav{
+    width: 100%;
+
+}
 nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
+    justify-content: center;
 }
 
 nav ul li {
@@ -40,11 +45,34 @@ nav ul li a {
     text-decoration: none;
     color: #fdfcfc;
     font-weight: bold;
+    font-size: 2vw;
 }
 
 
 nav ul li a:hover {
     color: #050000;
+}
+
+h1{
+    font-size: 4vw;
+    text-align: center;
+}
+
+h2{
+    font-size: 2.5vw;
+}
+
+p{
+    text-align: center;
+}
+
+
+
+
+.ganador{
+    border-color:crimson;
+    border-width: 5px;
+    border-radius: 10px;
 }
 .header{
     height: 20px;
@@ -52,16 +80,16 @@ nav ul li a:hover {
 }
 
 #logo{
-    width: 150px;
-    margin-left: 20px;
-    margin-right: 20px;
+    width: 20vw;
+    margin: 10px;
     
 }
+
 #palabra{
     display:flex;
     justify-content: space-around;
     background-color:darkgrey;
-    font-size: 130px;
+    font-size: 5vw;
     margin-left: 50px;
     margin-right: 50px;
 }
@@ -75,21 +103,27 @@ nav ul li a:hover {
     max-width: max-content;
     justify-content: space-around;
     
-    font-size: 30px;
+    font-size: 5vw;
     margin-top: 20px;
-    margin-left: 100px;
+    margin-left: 20px;
     margin-bottom: 20px;
 }
+.botones{
+    display: flex;
+    justify-content: center;
+}
 #adivinaLetra{
-    font-size: 50px;
-    margin-left: 100px;
+    font-size: 5vw;
+    
     margin-bottom: 30px;
+    width: 45vw;
 
 }
 #adivinaBtn{
-    font-size: 50px;
+    font-size: 5vw;
     justify-content: center;
     margin-bottom: 30px;
+    width: 25vw;
 }
 
 .bReinicio{
@@ -98,7 +132,7 @@ nav ul li a:hover {
 
 .reinicio{
     display: inline-block;
-    background-color: #ff99cc;
+    background-color: #cf9924;
     justify-content: center;
     padding: 10px 20px;
     border-radius: 5px;
@@ -113,11 +147,26 @@ nav ul li a:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color:#c204fcde; /* Color de fondo de la alerta */
+    background-color:#cf9924; /* Color de fondo de la alerta */
     color: black; /* Color del texto de la alerta */
     padding: 15px;
     border-radius: 5px;
     text-align: center;
     display: none;
     font-size: 20px;
+    border-color: #050000;
+    border-style: double;
   }
+
+  @media screen and (max-width: 500px) {
+    nav ul{
+      display: block;
+    }
+    .seleccionado{
+      width: 50px;
+      height: 50px;
+      }
+      nav ul li {
+      margin-right: 0px;
+      }
+   }
