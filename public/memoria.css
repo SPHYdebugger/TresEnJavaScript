@@ -84,13 +84,20 @@ p{
 }
 
 .game-button {
+    max-width: 200px;
+    max-height: 200px;
     width: 20vw;
     height: 20vw;
     background-color: #f0f0f0;
     cursor: pointer;
     background-size: cover;
 }
-
+#intentos{
+    display: flex;
+    align-items: center; /* Centrado vertical */
+  justify-content: center; /* Centrado horizontal */
+  font-size: 4vw;
+}
 
 .ganador{
     border-color:crimson;
