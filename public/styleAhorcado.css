@@ -6,14 +6,13 @@ body {
 }
 
 .marco-rosa {
-    border: 10px solid #cf9924; /* Color rosa del marco */
+    border: 10px solid #cf9924;
     padding: 20px;
     
 }
 
 header {
-    background-color: #cf9924; /* Fondo blanco para el encabezado */
-    
+    background-color: #cf9924;    
     padding: 10px 0;
     display: flex;
     justify-content: left;
@@ -21,10 +20,11 @@ header {
     padding: 15px;
     border-radius: 10px;
 }
+
 nav{
     width: 100%;
-
 }
+
 nav ul {
     list-style: none;
     margin: 0;
@@ -48,7 +48,6 @@ nav ul li a {
     font-size: 2vw;
 }
 
-
 nav ul li a:hover {
     color: #050000;
 }
@@ -66,14 +65,12 @@ p{
     text-align: center;
 }
 
-
-
-
 .ganador{
     border-color:crimson;
     border-width: 5px;
     border-radius: 10px;
 }
+
 .header{
     height: 20px;
     display: block;
@@ -81,8 +78,7 @@ p{
 
 #logo{
     width: 20vw;
-    margin: 10px;
-    
+    margin: 10px;    
 }
 
 #palabra{
@@ -93,32 +89,34 @@ p{
     margin-left: 50px;
     margin-right: 50px;
 }
+
 .casilla{
     background-color:darkgrey;
     font-size: 130px;
-
 }
+
 #informacion{
     display:block;
     max-width: max-content;
-    justify-content: space-around;
-    
+    justify-content: space-around;    
     font-size: 5vw;
     margin-top: 20px;
     margin-left: 20px;
     margin-bottom: 20px;
 }
+
 .botones{
     display: flex;
     justify-content: center;
 }
+
 #adivinaLetra{
     font-size: 5vw;
-    
+    margin-left: 20px;
     margin-bottom: 30px;
     width: 45vw;
-
 }
+
 #adivinaBtn{
     font-size: 5vw;
     justify-content: center;
@@ -139,7 +137,6 @@ p{
     font-weight: bold;
     color: #fff;
     text-decoration: none;
-
 }
 
 .alerta {
@@ -156,17 +153,21 @@ p{
     font-size: 20px;
     border-color: #050000;
     border-style: double;
-  }
+}
 
-  @media screen and (max-width: 500px) {
-    nav ul{
-      display: block;
-    }
-    .seleccionado{
-      width: 50px;
-      height: 50px;
-      }
-      nav ul li {
-      margin-right: 0px;
-      }
-   }
+@media screen and (max-width: 500px) {
+
+nav ul{
+    display: block;
+}
+
+.seleccionado{
+width: 50px;
+height: 50px;
+}
+
+nav ul li {
+margin-right: 0px;
+}
+
+}

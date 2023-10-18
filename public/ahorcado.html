@@ -13,9 +13,7 @@
             <img id="logo" src="caraSofi.png" alt="Logo de la página">
             <nav>
                 <h2>JUEGOS PARA SOFÍA: </h2>
-                <ul>
-                    
-                    
+                <ul>                 
                     <li><a href="index.html"><h1>3enRaya</h1></a></li>
                     <li><a href="ahorcado.html"><h1>Ahorcado</h1></a></li>
                     <li><a href="memoria.html"><h1>Memoria</h1></a></li>
@@ -23,26 +21,25 @@
             </nav>
         </header>
         <div style="background-color: #cf9924; border-radius: 15px;"><h1>JUEGO DEL AHORCADO HECHO EN JAVASCRIPT</h1>
-        <div id="palabra">
+            <div id="palabra"></div>
 
-            
+            <div id="informacion">
+                <div id="intentos">Intentos restantes: <span id="intentosRestantes"></span></div>
+                <div id="letrasUsadas">Letras usadas: <span id="letras"></span></div>
+            </div>
 
+            <div class="botones"></div>
+            <input class="form-control" id="adivinaLetra" type="search" maxlength="1" placeholder="Prueba una letra">
+            <button id="adivinaBtn">Aceptar</button>
         </div>
-        <div id="informacion">
-            <div id="intentos">Intentos restantes: <span id="intentosRestantes"></span></div>
-            <div id="letrasUsadas">Letras usadas: <span id="letras"></span></div>
+        <div class="bReinicio">
+            <a href="ahorcado.html"><h2 class="reinicio">VOLVER A JUGAR</h2></a>
         </div>
-        <div class="botones">
-        <input class="form-control" id="adivinaLetra" type="search" maxlength="1" placeholder="Prueba una letra">
-        <button id="adivinaBtn">Aceptar</button>
-        </div>
-    </div>
-    <div class="bReinicio">
-        <a href="ahorcado.html"><h2 class="reinicio">VOLVER A JUGAR</h2></a>
-    </div>
-    <div id="alerta" class="alerta oculto">
+
+        <div id="alerta" class="alerta oculto">
         Este es un mensaje de alerta.
-      </div>
+        </div>
+
     <script src="./jsAhorcado.js"></script>
 </body>
 </html>

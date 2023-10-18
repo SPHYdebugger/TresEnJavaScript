@@ -71,17 +71,19 @@ function handleCardClick() {
     }
     
 }
+
 // Actualizar los intentos restantes
 function actualizarIntentosRestantes() {
     intentosRestantesElemento.textContent = intentosRestantes;
 }
+
 // Iniciar el juego
 createGameButtons();
 actualizarIntentosRestantes();
 
-
+// Finalizar el juego
 function finalizarJuego() {
-    // Mostrar solo las cartas que no se han girado
+    // Mostrar las cartas que no se han girado
     const cartas = document.querySelectorAll(".game-button");
     cartas.forEach((carta) => {
         if (!carta.classList.contains("flipped")) {
@@ -101,6 +103,7 @@ function finalizarJuego() {
     }, 1000);
 }
 
+
 function mostrarAlerta(mensaje) {
     const alerta = document.getElementById('alerta');
     alerta.innerText = mensaje;
@@ -109,11 +112,10 @@ function mostrarAlerta(mensaje) {
     alerta.style.display = 'block';
               
     // Ocultar la alerta después de 3 segundos
-    setTimeout(() => {
-     
-      setTimeout(() => {
+    setTimeout(() => {     
+        setTimeout(() => {
         alerta.style.display = 'none';
-      }, 300);
+            }, 300);
     }, 3000);
-  }
+}
 

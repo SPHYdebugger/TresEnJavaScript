@@ -9,7 +9,7 @@ const btnPulsado = (e, pos) => {
 
     if (tablero[pos] !== null) {
         mostrarAlerta('Esta casilla ya está usada, por favor elige otra.');
-        return; // Salir de la función si la casilla ya está ocupada
+        return;
     }
 
     turno++;
@@ -22,6 +22,7 @@ const btnPulsado = (e, pos) => {
 
     tablero[pos] = imagen;
     
+    // Mostrar ganador y casillas ganadoras
     if (haGanado()) {
         setTimeout(() => {
             const nombreGanador = turno % 2 === 0 ? nombreJugador1 : nombreJugador2;
@@ -65,6 +66,7 @@ const btnPulsado = (e, pos) => {
     }
 }
 
+    // Combinaciones ganadoras
 const haGanado = () =>{
     if(tablero[0] == tablero[1] && tablero[0] == tablero[2] && tablero[0]){
         return true, combinación = 1;
@@ -87,6 +89,7 @@ const haGanado = () =>{
     }
 }
 
+    // Seleccionar los avatares
 document.querySelectorAll('button').forEach(
     (obj, i) => obj.addEventListener('click', (e) => btnPulsado(e,i)));
 
