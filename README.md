@@ -1,5 +1,5 @@
 ﻿<p align="center">
-<img width="600px" src="menu.jpg">
+<img width="200px" src="menu.jpg">
 <h1 align="center">Web de Juegos en JavaScript</h1>
 </p>
 
