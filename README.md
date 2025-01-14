@@ -24,8 +24,10 @@ El proyecto combina juegos clásicos en una plataforma web moderna y accesible, 
 
 ### Resumen pantallas WEB
 ﻿<p align="center">
-<img width="100%" src="tres.jpg">
-<img width="100%" src="ahorcado.jpg">
-<img width="100%" src="memoria.jpg">
+<img width="300px" src="tres.jpg">
+
+<img width="300px" src="ahorcado.jpg">
+
+<img width="300px" src="memoria.jpg">
 <h1 align="center">Web de Juegos en JavaScript</h1>
 </p>
