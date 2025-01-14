@@ -13,8 +13,7 @@ Este proyecto consiste en el desarrollo de una página web interactiva que inclu
 
 ### Tecnologías Utilizadas
 
-## Lenguajes:
-
+Lenguajes:
 - **HTML5:** Estructura de la página y elementos interactivos.
 - **CSS3:** Estilo visual, diseño responsivo y animaciones.
 - **JavaScript:** Lógica de los juegos, interacción del usuario y control de eventos.
@@ -23,7 +22,7 @@ Este proyecto consiste en el desarrollo de una página web interactiva que inclu
 El proyecto combina juegos clásicos en una plataforma web moderna y accesible, ideal para entretener y practicar habilidades básicas de programación.
 
 ### Resumen pantallas WEB
-
+﻿<p align="center">
 Pantalla 3enRaya
 <img width="300px" src="tres.jpg">
 ﻿
