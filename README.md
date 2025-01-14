@@ -24,10 +24,16 @@ El proyecto combina juegos clásicos en una plataforma web moderna y accesible, 
 
 ### Resumen pantallas WEB
 ﻿<p align="center">
+ Pantalla 3enRaya
 <img width="300px" src="tres.jpg">
 
+﻿<p align="center">
+ Pantalla Ahoracdo
 <img width="300px" src="ahorcado.jpg">
 
+﻿<p align="center">
+ Pantalla Memory
 <img width="300px" src="memoria.jpg">
+
 <h1 align="center">Web de Juegos en JavaScript</h1>
 </p>
